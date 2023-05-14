@@ -101,12 +101,60 @@ warning: in the working copy of 'new.xml', LF will be replaced by CRLF the next 
 [main 9926dcc] add info
  1 file changed, 10 insertions(+)
  
- 
+ kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git push
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 721 bytes | 180.00 KiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Veronika-Koronets/XML.git
+   777befc..da29921  main -> main
+
 ```
- 
- 
- 
- 
+
+## 9. Create file preferences.xml
+## 10. In the preferences.xml file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in XML format.
+We`ll do 2 points at one time
+
+``
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ vim preferences.xml
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ cat preferences.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<preferences>
+        <film>Legally_Blonde <film>
+        <series> Blacklist <series>
+        <food> pizza <food>
+        <season> spring <season>
+        <country> Norway <country>
+
+</preferences>
+
+``
+ ## 11. Create a skills.xml file add information about the skills that will be studied in the course in XML format.
+``
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ vim skills.xml
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ cat skills.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<skills>
+        <skill1> Terminal <skill1>
+        <skill2> GIT <skill2>
+        <skill3> SQL <skill3>
+        <skill4> Jmeter <skill4>
+        <skill5> Postman <skill5>
+        <skill6> Fiddler <skill6>
+
+</skills>
+``
+
+## 12. 
  
  
  
