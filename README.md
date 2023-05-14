@@ -63,18 +63,45 @@ To https://github.com/Veronika-Koronets/XML.git
  ```
  
  
- ## 7. Edit the content of the “new.json” file - write information about yourself (full name, age, number of pets, future desired salary). Everything is written in JSON format.
+ ## 7. Edit the content of the “new.xml” file - write information about yourself (full name, age, number of pets, future desired salary). Everything is written in XML format.
 ```
 kv@kvPC MINGW64 /d/Json (main)
 $ vim new.xml
 
-       
-       
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ cat new.xml
+<?xml version="1.0" encoding="UTF-8"?>
+<info>
+
+        <person_name>K. Veronika Gennadyevna <person_name>
+        <person_age>22 <person_age>
+        <number_of_pets> 1 <number_of_pets>
+        <future_desired_salary> 1300 <future_desired_salary
+
+</info>       
 ``` 
 
 ## 8. Send the changes to remote repository
 ```
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
 
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   new.xml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git commit -am "add info"
+warning: in the working copy of 'new.xml', LF will be replaced by CRLF the next time Git touches it
+[main 9926dcc] add info
+ 1 file changed, 10 insertions(+)
+ 
+ 
 ```
  
  
