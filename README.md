@@ -111,14 +111,13 @@ Writing objects: 100% (5/5), 721 bytes | 180.00 KiB/s, done.
 Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
 To https://github.com/Veronika-Koronets/XML.git
    777befc..da29921  main -> main
-
 ```
 
 ## 9. Create file preferences.xml
 ## 10. In the preferences.xml file, add information about your preferences (Favorite movie, favorite series, favorite food, favorite season, side you would like to visit) in XML format.
 We`ll do 2 points at one time
 
-``
+```
 kv@kvPC MINGW64 /d/github_lesson/XML (main)
 $ vim preferences.xml
 
@@ -133,10 +132,9 @@ $ cat preferences.xml
         <country> Norway <country>
 
 </preferences>
-
-``
+```
  ## 11. Create a skills.xml file add information about the skills that will be studied in the course in XML format.
-``
+```
 kv@kvPC MINGW64 /d/github_lesson/XML (main)
 $ vim skills.xml
 
@@ -152,9 +150,12 @@ $ cat skills.xml
         <skill6> Fiddler <skill6>
 
 </skills>
-``
+```
 
-## 12. 
- 
- 
- 
+## 12. Do one string commit
+## 13. Send two files at once to the remote repository
+## 14. Create a bug_report.xml file on the web interface
+## 15. Make Commit changes (save) changes on the web interface
+## 16. Modify the bug_report.xml file on the web interface, add a bug report in XML format.
+## 17. Make Commit changes (save) changes on the web interface.
+## 18. Synchronize remote and local XML repository.
