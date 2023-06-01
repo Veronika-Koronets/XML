@@ -159,3 +159,67 @@ $ cat skills.xml
 ## 16. Modify the bug_report.xml file on the web interface, add a bug report in XML format.
 ## 17. Make Commit changes (save) changes on the web interface.
 ## 18. Synchronize remote and local XML repository.
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git add . && git commit -m "adding preferences.xml and skills.xml"
+warning: in the working copy of 'preferences.xml', LF will be replaced by CRLF the next time Git touches it
+warning: in the working copy of 'skills.xml', LF will be replaced by CRLF the next time Git touches it
+[main 881d89b] adding preferences.xml and skills.xml
+ 2 files changed, 22 insertions(+)
+ create mode 100644 preferences.xml
+ create mode 100644 skills.xml
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git push
+To https://github.com/Veronika-Koronets/XML.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Veronika-Koronets/XML.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git push
+To https://github.com/Veronika-Koronets/XML.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Veronika-Koronets/XML.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git pull
+remote: Enumerating objects: 8, done.
+remote: Counting objects: 100% (8/8), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 6 (delta 2), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 2.02 KiB | 48.00 KiB/s, done.
+From https://github.com/Veronika-Koronets/XML
+   da29921..f465ca3  main       -> origin/main
+Merge made by the 'ort' strategy.
+ README.md | 65 +++++++++++++++++++++++++++++++++++++++++++++++++++++++--------
+ 1 file changed, 57 insertions(+), 8 deletions(-)
+
+kv@kvPC MINGW64 /d/github_lesson/XML (main)
+$ git push
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1011 bytes | 168.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Veronika-Koronets/XML.git
+   f465ca3..43bfce9  main -> main
+
